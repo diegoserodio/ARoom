@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/topnav.css">
+    <link rel="stylesheet" type="text/css" href="styles/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <title>ARoom</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+      <!-- Title -->
+    <div class="sidebar">
+      <div class="sidebarlogoimg">
+        <img src="resources/logo.png" alt="Logo">
+      </div>
+      <h2>ARoom</h2>
+      <!-- Progress Bar -->
+      <div id="circle1"></div>
+      <div id="shadowring"></div>
+      <div id="circle2"></div>
+      <canvas height="200" width="200" id="counter"></canvas>
+      <div id="clear"></div>
+      <div class="sidebarlabel"><h4>Temperatura Interna:</h4></div>
+      <div id="progressbarvalue"><h4></h4></div>
+      <div id="clear"></div>
+      <div class="sidebarlabel coolerlabel"><h4>Refrigeração:</h4></div>
+      <div id="coolerstatus"><h4>...</h4></div>
+      <div id="clear"></div>
+      <div class="sidebarlabel ledstriplabel"><h4>Fita de LED:</h4></div>
+      <div id="ledcolordisplay"></div>
+      <!-- Bottom Sin Wave Image -->
+      <div class="sidebarbotimg">
+        <img src="resources/sin-wave.png">
+      </div>
+    </div>
+    <!-- Top Navigation Bar -->
+    <nav>
+      <div class="topnav">
+        <a class="active" href="#">Home</a>
+        <a href="modes.html">Modos</a>
+        <a href="ledstrip.html">Fita de led</a>
+        <a href="sensors.html">Sensores</a>
+        <a href="#">Análise</a>
+        <a class="navbarimg settingsimg" href="#"><img src="resources/settings.png" alt="Settings"></a>
+      </div>
+    </nav>
+    <!-- Main -->
+    <div class="main">
+      <!-- Lâmpada -->
+      <div class="equipcontainer">
+        <div class="equipicon"><img src="resources/bulbOff.png" alt="Lâmpada" id="lightIcon"></div>
+        <div class="equipinfo">
+          <div class="equiplabel"><h4>Lâmpada</h4></div>
+          <div class="equipstatus"><div><img src="resources/clock.png"></div>
+          <div class="statuslabel">
+            <div id="lamp"><h5>Ligada</h5></div>
+          </div>
+        </div>
+        </div>
+        <div class="separator"></div>
+        <a href="#"><div class="btnOn" id="btnLightOn"><h5>Ligar</h5></div></a>
+        <a href="#"><div class="btnOff" id="btnLightOff"><h5>Desligar</h5></div></a>
+      </div>
+      <!-- Ventilador -->
+      <div class="equipcontainer">
+        <div class="equipicon"><img src="resources/fanOff.png" alt="Ventilador" id="fanIcon"></div>
+        <div class="equipinfo">
+          <div class="equiplabel"><h4>Ventilador</h4></div>
+          <div class="equipstatus"><div><img src="resources/clock.png"></div>
+          <div class="statuslabel">
+            <div id="fan"><h5>Ligado</h5></div>
+          </div>
+        </div>
+        </div>
+        <div class="separator"></div>
+        <a href="#"><div class="btnOn" id="btnFanOn"><h5>Ligar</h5></div></a>
+        <a href="#"><div class="btnOff" id="btnFanOff"><h5>Desligar</h5></div></a>
+      </div>
+      <!-- Pisca - Pisca -->
+      <div class="equipcontainer">
+        <div class="equipicon"><img src="resources/lightsOff.png" alt="Pisca-Pisca" id="lightsIcon"></div>
+        <div class="equipinfo">
+          <div class="equiplabel"><h4>Pisca-Pisca</h4></div>
+          <div class="equipstatus"><div><img src="resources/clock.png"></div>
+          <div class="statuslabel">
+            <div id="lights"><h5>Ligado</h5></div>
+          </div>
+        </div>
+        </div>
+        <div class="separator"></div>
+        <a href="#"><div class="btnOn" id="btnLightsOn"><h5>Ligar</h5></div></a>
+        <a href="#"><div class="btnOff" id="btnLightsOff"><h5>Desligar</h5></div></a>
+      </div>
+      <!-- Monitor -->
+      <div class="equipcontainer">
+        <div class="equipicon"><img src="resources/screenOff.png" alt="Monitor" id="screenIcon"></div>
+        <div class="equipinfo">
+          <div class="equiplabel"><h4>Monitor</h4></div>
+          <div class="equipstatus"><div><img src="resources/clock.png"></div>
+          <div class="statuslabel">
+            <div id="screen"><h5>Ligado</h5></div>
+          </div>
+        </div>
+        </div>
+        <div class="separator"></div>
+        <a href="#"><div class="btnOn" id="btnScreenOn"><h5>Ligar</h5></div></a>
+        <a href="#"><div class="btnOff" id="btnScreenOff"><h5>Desligar</h5></div></a>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- My JavaScript -->
+    <script src="scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="scripts/xmlhttpObject.js" type="application/javascript"></script>
+    <script src="scripts/sidebar.js" type="application/javascript"></script>
+    <script src="scripts/main.js" type="application/javascript"></script>
+  </body>
+</html>

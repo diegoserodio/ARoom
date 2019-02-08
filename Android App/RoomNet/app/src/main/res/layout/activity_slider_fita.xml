@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad3">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fitaSliderViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnFitaPrevious"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:background="@drawable/ic_chevron_left_black_24dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnFitaOn"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:text="LIGAR"/>
+            <Button
+                android:id="@+id/btnFitaOff"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:text="DESLIGAR"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnFitaNext"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_chevron_right_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

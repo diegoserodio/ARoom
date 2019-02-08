@@ -1,0 +1,1 @@
+This is "a room" automation project (ARoom :D), based on arduino with a Ethernet shield running a server on my local wifi network. From that I'm able to control through a web page or through a android application, using AJAX to talk to the server.

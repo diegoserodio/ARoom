@@ -1,0 +1,107 @@
+.main{
+	margin-left: 30%;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.main .equipcontainer{
+	margin-left: 1%;
+	margin-right: 5px;
+	border-bottom: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: #D8D8D8;
+	height: 140px;
+	width: 100%;
+}
+
+.main .equipcontainer .equipicon{
+	float: left;
+	margin-left: 10%;
+}
+
+.main .equipcontainer .equipicon img{
+	margin-top: 3%;
+	margin-left: 10%;
+	height: 124px;
+	width: 124px;
+	padding: 10px;
+	filter: invert(70%);
+}
+
+.main .equipcontainer .equipinfo{
+	float: left;
+	padding: 10px;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.main .equipcontainer .equipinfo .equipstatus div{
+	display: inline-block;
+}
+
+.main .equipcontainer .equipinfo .equipstatus{
+	margin-top: 2%;
+}
+
+.main .equipcontainer .equipinfo .equipstatus img{
+	filter: invert(70%);
+	margin-right: 5px;
+	margin-bottom: 4px;
+	width: 20px;
+	height: 20px;
+}
+
+.main .equipcontainer .equipinfo .equipstatus .statuslabel{
+	color: #848484;
+	padding: 5px;
+}
+
+.main .equipcontainer .separator{
+	float: left;
+	position: absolute;
+	left: 63%;
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 2px;
+	height: 90px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D8D8D8;
+}
+
+.main .equipcontainer .btnOn{
+	background-color: #04B404;
+	border-radius: 10px 0 0 10px;
+	color: white;
+	float: left;
+	position: absolute;
+	left: 64%;
+	height: 40px;
+	margin-top: 60px;
+	margin-left: 100px;
+	padding: 10px;
+	text-align: center;
+	width: 100px;
+}
+
+.main .equipcontainer a:hover  .btnOn{
+	background-color: #088A08;
+}
+
+.main .equipcontainer .btnOff{
+	background-color: #FF0040;
+	border-radius: 0 10px 10px 0;
+	color: white;
+	float: left;
+	position: absolute;
+	left: 78.5%;
+	height: 40px;
+	margin-top: 60px;
+	padding: 10px;
+	text-align: center;
+	width: 100px;
+}
+
+.main .equipcontainer a:hover .btnOff{
+	background-color: #B40431;
+}

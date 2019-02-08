@@ -1,0 +1,43 @@
+.topnav{
+	background-color: #2E2E2E;
+	margin-left: 30%;
+	overflow: hidden;
+}
+
+.topnav img{
+	float: right;
+	height: 23px;
+	width: 30px;
+}
+
+.topnav a{
+	color: white;
+	float: left;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.topnav a:hover{
+	background-color: #A4A4A4;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: #0489B1;
+	color: white;
+}
+
+.topnav a.navbarimg{
+	background-color: #2E2E2E;
+	float: left;
+	height: 54px;
+	width: 100px;
+}
+
+.topnav a.navbarimg.settingsimg{
+	background-color: #2E2E2E;
+	float: right;
+	margin-right: 10px;
+	height: 54px;
+	width: 54px;
+}

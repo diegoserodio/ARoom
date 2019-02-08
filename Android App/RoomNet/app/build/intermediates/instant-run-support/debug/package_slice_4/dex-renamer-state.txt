@@ -1,0 +1,4 @@
+#Mon Nov 19 21:11:59 BRST 2018
+base.0=C\:\\Users\\diego\\AndroidStudioProjects\\RoomNet\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\43
+path.0=classes.dex
+renamed.0=classes.dex

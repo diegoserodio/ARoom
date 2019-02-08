@@ -1,0 +1,135 @@
+#previousButton{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 5%;
+  top: 100px;
+}
+
+#ledStatus{
+  filter: invert(80%);
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 40%;
+  top: 30px;
+}
+
+#nextButton{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 85%;
+  top: 100px;
+}
+
+.mainled{
+	margin-left: 30%;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.mainled .topcolordisplay{
+	background-color: #fff;
+	position: absolute;
+	left: 30%;
+	right: 0;
+	top: 50px;
+	bottom: 55%;
+}
+
+.mainled .topcolordisplay img:hover{
+	transform: scale(1.1);
+}
+
+.mainled .colorcontainer{
+	margin-top: 250px;
+	padding: 10px;
+}
+
+.mainled .colorcontainer.second{
+	margin-top: 0px;
+}
+
+.mainled .colorcontainer .colorlabel{
+	padding: 10px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider.red::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #FE2E2E; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider.green::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #31B404; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider.blue::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2E9AFE; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider.red::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #FE2E2E; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider.green::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #31B404; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider.blue::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2E9AFE; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
