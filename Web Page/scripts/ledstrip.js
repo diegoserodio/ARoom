@@ -1,6 +1,6 @@
-var	redLabel = document.getElementById('redLabel'); 
-var	greenLabel = document.getElementById('greenLabel'); 
-var	blueLabel = document.getElementById('blueLabel'); 
+var	redLabel = document.getElementById('redLabel');
+var	greenLabel = document.getElementById('greenLabel');
+var	blueLabel = document.getElementById('blueLabel');
 var redSlider = document.getElementById('redSlider');
 var greenSlider = document.getElementById('greenSlider');
 var blueSlider = document.getElementById('blueSlider');
@@ -38,17 +38,17 @@ function updateStatusMainPage(){
 	var redValue = parseFloat(newHTML.substring(newHTML.indexOf("rgbValue")+29, newHTML.indexOf("rgbValue")+32));
 	redValue = ((redValue-100)*2);
 	document.getElementById('redLabel').innerHTML = "<h5>Vermelho: "+redValue+"</h5>";
-	document.getElementById('redSlider').value = redValue; 
+	document.getElementById('redSlider').value = redValue;
 
 	var greenValue = parseFloat(newHTML.substring(newHTML.indexOf("rgbValue")+33, newHTML.indexOf("rgbValue")+36));
 	greenValue = ((greenValue-100)*2);
 	document.getElementById('greenLabel').innerHTML = "<h5>Verde: "+greenValue+"</h5>";
-	document.getElementById('greenSlider').value = greenValue; 
+	document.getElementById('greenSlider').value = greenValue;
 
 	var blueValue = parseFloat(newHTML.substring(newHTML.indexOf("rgbValue")+37, newHTML.indexOf("rgbValue")+40));
 	blueValue = ((blueValue-100)*2);
 	document.getElementById('blueLabel').innerHTML = "<h5>Azul: "+blueValue+"</h5>";
-	document.getElementById('blueSlider').value = blueValue; 
+	document.getElementById('blueSlider').value = blueValue;
 
 	if(newHTML.includes("Fita - Ligado")){
 		document.getElementById('colorDisplay').style.backgroundColor = 'rgb('+redValue+','+greenValue+','+blueValue+')';
@@ -132,11 +132,7 @@ function changeImg(){
 function sendLedCommand(){
 	switch(imgCounter){
 		case 0:
-			if(powerStatus == true){
-				executeCommand("stripOff");
-			}else{
-				executeCommand("strip");
-			}
+			executeCommand("strip");
 		break;
 		case 1:
 		break;

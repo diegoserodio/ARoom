@@ -9,10 +9,7 @@ var counter = document.getElementById('counter').getContext('2d');
     var coolerStatus = document.getElementById('coolerstatus');
     var ledColorDisplay = document.getElementById('ledcolordisplay');
     var circleColor = '#fff';
-    /*var red = 0;
-    var green = 0;
-    var blue = 0;*/
-	
+
 	var coolerStatusValue = "...";
 	var fill;
 
@@ -26,7 +23,7 @@ var counter = document.getElementById('counter').getContext('2d');
         redValue = ((redValue-100)*2);
         greenValue = ((greenValue-100)*2);
         blueValue = ((blueValue-100)*2);
-        
+
 		if(newHTML.includes("Cooler: 1")){
 			coolerStatusValue = "Ligado";
 		}
@@ -85,5 +82,3 @@ var counter = document.getElementById('counter').getContext('2d');
         }
     	return mappedValue;
     }
-
-
