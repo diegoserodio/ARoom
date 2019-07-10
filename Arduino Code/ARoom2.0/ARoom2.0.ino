@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Ethernet.h>
 #include <FastLED.h>
 #include "ServerHandler.h"
@@ -27,8 +28,4 @@ void loop() {
     site.show();
     startMillis[0] = millis();
   }
-  // if(millis() - startMillis[1] >= intervals[1]){
-  //   sensor.temperature();
-  //   startMillis[1] = millis();
-  // }
 }
